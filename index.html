@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d0e17ced7d.js" crossorigin="anonymous"></script>
     <!-- tailwind config -->
     <script>
         tailwind.config = {
@@ -21,6 +23,7 @@
                 extend: {
                     colors: {
                         green: '#00413D',
+                        orange : '#E5745D',
                     },
                     fontFamily: {
                         jost: "Jost",
@@ -104,7 +107,7 @@
     </header>
     <main class="md:w-8/12 mx-auto w-full relative md:my-24 my-6">
         <!-- card items start -->
-        <section class="md:my-12 my-5">
+        <section class="md:my-12 my-5 relative">
             <div class="flex justify-center items-center gap-3 my-4 text-red-400 font-semibold font-velkorn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                     <path fill-rule="evenodd"
@@ -171,6 +174,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="md:block hidden absolute -left-40 top-28 inset-y-0">
+                <img src="./asstes/bulet_shape.png" alt="">
             </div>
         </section>
         <!-- card items end -->
@@ -250,6 +256,100 @@
             </div>
         </section>
         <!-- Radial progress end -->
+        <!-- my recent project section start -->
+        <section>
+            <div class="md:my-10 md:m-0 m-4">
+                <div class="flex items-center gap-3 my-4 text-red-400 font-semibold font-velkorn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>View Case Studies</p>
+                </div>
+                <div class="flex justify-between">
+                    <h3 class="md:text-5xl text-3xl font-velkorn font-extrabold text-green">My Recent Projects</h3>
+                    <div class="inline-flex gap-4">
+                        <i class="fa-solid fa-arrow-left border p-3 cursor-pointer flex-col flex justify-center items-center px-5"></i>
+                        <i class="fa-solid fa-arrow-right border p-3 cursor-pointer text-white bg-orange flex-col flex justify-center items-center px-5"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:m-0 m-4">
+                <div class="card bg-base-100 md:w-96 w-full rounded-none shadow-xl">
+                    <figure>
+                        <img src="./asstes/image.png"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-velkorn font-medium text-lg text-orange">Analytics, UI-Ux</h2>
+                        <p class="text-green text-xl font-medium">Branding & Digital Video Campaign For George’s Cafe</p>
+                        <p class="text-[16px] text-green">Lorem Ipsum Is Simply Dummy Text Of The
+                            Printing And Typesetting Industry.</p>
+                        <div class="card-actions">
+                            <div class="flex justify-center items-center gap-3 my-4  font-semibold font-velkorn">
+                                <p>View Case Studies</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd"
+                                        d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 md:w-96 w-full rounded-none shadow-xl">
+                    <figure>
+                        <img src="./asstes/port 01.png"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-velkorn font-medium text-lg text-orange">Mobile App</h2>
+                        <p class="text-green text-xl font-medium">Branding & Digital Video Campaign For George’s Cafe</p>
+                        <p class="text-[16px] text-green">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.</p>
+                        <div class="card-actions">
+                            <div class="flex justify-center items-center gap-3 my-4  font-semibold font-velkorn text-orange">
+                                <p>View Case Studies</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd"
+                                        d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 md:w-96 w-full rounded-none shadow-xl">
+                    <figure>
+                        <img src="./asstes/port 02.png"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title font-velkorn font-medium text-lg text-orange">Web Development</h2>
+                        <p class="text-green text-xl font-medium">Branding & Digital Video Campaign For George’s Cafe</p>
+                        <p class="text-[16px] text-green">Lorem Ipsum Is Simply Dummy Text Of The
+                            Printing And Typesetting Industry.</p>
+                        <div class="card-actions">
+                            <div class="flex justify-center items-center gap-3 my-4  font-semibold font-velkorn">
+                                <p>View Case Studies</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd"
+                                        d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center font-jost md:my-8 my-5">
+                <button
+                    class=" md:px-10 btn rounded-none bg-[#E5745D] text-white text-lg font-medium border-2 border-white  outline-[#E5745D] outline hover:bg-[#E5745D]">Download
+                    CV</button>
+            </div>
+        </section>
+        <!-- my recent project section end -->
     </main>
     <footer>
 
