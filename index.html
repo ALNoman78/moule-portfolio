@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisyUi + tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: '#00413D',
+                    },
+                    fontFamily: {
+                        jost: "Jost",
+                        velkorn: "Vollkorn",
+                    },
+                    backgroundImage: {
+                        img: 'url(./asstes/background.png)',
+                        shape: 'url(./asstes/shape.png)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- nav start  -->
+        <nav class="md:w-10/12 w-full mx-auto font-jost pt-4">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 bg-opacity-30 z-10 srounded-box mt-3 w-52 p-2 shadow">
+                            <li class="text-[#E5745D]"><a>Home</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <img src="./asstes/logo.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#00413D] text-lg">
+                        <li class="text-[#E5745D]"><a>Home</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end md:flex hidden">
+                    <div class="inline-flex font-jost md:my-8 my-5">
+                        <button
+                            class=" md:px-10 btn rounded-none bg-[#E5745D] text-white text-lg font-medium border-2 border-white  outline-[#E5745D] outline">Download
+                            CV</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end -->
+        <!-- hero section -->
+        <div class="bg-[#00413D] w-full bg-shape bg-left bg-no-repeat">
+            <div class="flex flex-col md:flex-row items-center md:justify-end relative">
+                <div
+                    class="md:z-10 text-white p-5 font-velkorn md:absolute md:translate-x-1/2 md:translate-y-1/2 top-10 -left-16">
+                    <h1 class="md:text-8xl text-3xl font-bold">Hello!</h1>
+                    <span class="md:text-8xl text-3xl font-bold">I’m Zarror Nibors</span>
+                    <p class="text-[rgba(255,255,255,0.51)] font-jost md:w-2/3">I’am freelance <span
+                            class="text-white">UI/UX Desogner</span> based in Indonesia who loves to craft attractive
+                        design experiences for the web.</p>
+                    <div class="inline-flex font-jost md:my-8 my-5">
+                        <button
+                            class=" md:px-10 btn rounded-none bg-[#E5745D] text-white text-lg font-medium border-2 border-white  outline-[#E5745D] outline">Contact
+                            Me</button>
+                    </div>
+                </div>
+                <div class="">
+                    <img class="w-full" src="./asstes/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="md:w-8/12 mx-auto w-full relative md:my-24 my-6">
+        <!-- card items start -->
+        <section class="md:my-12 my-5">
+            <div class="flex justify-center items-center gap-3 my-4 text-red-400 font-semibold font-velkorn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <p>MY SERVICES</p>
+            </div>
+            <h3 class="md:text-5xl text-3xl font-extrabold text-center md:w-2/4 font-velkorn mx-auto md:mb-10 mb-4">
+                Provide Wide Range of
+                Digital Services</h3>
+            <div class="grid md:grid-cols-3 grid-cols-1 p-4 gap-5">
+                <div class="card bg-base-100 md:w-96 w-full  rounded-none shadow-xl">
+                    <div class="card-body">
+                        <div>
+                            <img src="./asstes/icon.png" alt="">
+                        </div>
+                        <h2 class="card-title font-velkorn md:mt-4 font-extrabold">Ui/Ux Design</h2>
+                        <p class="my-4 text-green">Dolor repellendus tempo ribus aue
+                            quibusdam offi ciis debitis rerum na
+                            aibus minima veniam.</p>
+                        <div class="card-actions justify-start cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 md:w-96 w-full  rounded-none shadow-xl">
+                    <div class="card-body">
+                        <div>
+                            <img src="./asstes/booking 1 (Traced).png" alt="">
+                        </div>
+                        <h2 class="card-title font-velkorn md:mt-4 font-extrabold">Ui/Ux Design</h2>
+                        <p class="my-4 text-green">Dolor repellendus tempo ribus aue
+                            quibusdam offi ciis debitis rerum na
+                            aibus minima veniam.</p>
+                        <div class="card-actions justify-start cursor-pointer text-red-400 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 md:w-96 w-full  rounded-none shadow-xl">
+                    <div class="card-body">
+                        <div>
+                            <img src="./asstes/web-design 1 (Traced).png" alt="">
+                        </div>
+                        <h2 class="card-title font-velkorn md:mt-4 font-extrabold">Ui/Ux Design</h2>
+                        <p class="my-4 text-green">Dolor repellendus tempo ribus aue
+                            quibusdam offi ciis debitis rerum na
+                            aibus minima veniam.</p>
+                        <div class="card-actions justify-start cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card items end -->
+        <!-- about me section start -->
+        <section class="flex md:flex-row flex-col justify-around gap-5 items-center p-3 ">
+            <div class="flex-1">
+                <div class="grid grid-cols-2 gap-4 ">
+                    <div class="row-span-2 w-full"><img class="w-full h-full object-cover " src="./asstes/image (2).png"
+                            alt=""></div>
+                    <div class="md:w-[270px] w-full"><img class="w-full object-cover md:h-[200px]"
+                            src="./asstes/Your Images Here.png" alt=""></div>
+                    <div class="md:w-[270px] w-full"><img class="w-full object-cover md:h-[200px]"
+                            src="./asstes/Your Images Here (1).png" alt=""></div>
+                </div>
+            </div>
+            <div class="flex-1 ">
+                <div class="flex items-center gap-3 my-4 text-red-400 font-semibold font-velkorn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>MY SERVICES</p>
+                </div>
+                <h3 class="md:text-5xl text-3xl font-velkorn font-medium text-green py-3">I Enjoy Solving Problems
+                    With Scalable Solutions</h3>
+                <p class="text-[16px] text-green ">Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
+                    aeci velit, sed quia non numquam eius modi tempora incidunt lao
+                    magnam aliquam quaerat voluptatem reprehenderit.</p>
+                <br>
+                <p class="text-[16px] text-green ">Modi tempora incidunt ut lao magnam aliquam quaerat voluptatem
+                    reprehenderit non numquam eius.</p>
+                <div class="inline-flex font-jost md:my-8 my-5"></div>
+                <button
+                    class=" md:px-10 btn rounded-none hover:bg-[#E5745D] bg-[#E5745D] text-white text-lg font-medium border-2 border-white  outline-[#E5745D] outline"
+                    onclick="my_modal_4.showModal()">Download
+                    CV</button>
+
+                <!-- Open the modal using ID.showModal() method -->
+                <dialog id="my_modal_4" class="modal">
+                    <div class="modal-box flex justify-center items-center flex-col w-96 max-w-5xl">
+                        <h3 class="text-lg font-bold">Download Start</h3>
+                        <p class="py-4">Click the button below to close</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <!-- if there is a button, it will close the modal -->
+                                <div><button class="btn">Close</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+            </div>
+        </section>
+        <!-- about me section end -->
+        <!-- Radial progress start -->
+        <section class="grid md:grid-cols-4 grid-cols-1 gap-3 bg-transparent md:my-20 my-9 p-5">
+            <div class="shadow-lg  flex justify-center flex-col items-center  text-green ">
+                <div class="radial-progress size-[7rem] after:bg-none after:inset-[56px] text-[#E5745D] font-velkorn font-semibold md:text-4xl my-3 rounded-none "
+                    style="--value:70;" role="progressbar">70%</div>
+                <p class="font-medium md:text-2xl font-velkorn p-3">Graphics Design</p>
+            </div>
+            <div class="shadow-lg  flex justify-center flex-col items-center  text-green ">
+                <div class="radial-progress size-[7rem] after:bg-none after:inset-[56px] text-[#E5745D] font-velkorn font-semibold md:text-4xl my-3 rounded-none "
+                    style="--value:85;" role="progressbar">85%</div>
+                <p class="font-medium md:text-2xl font-velkorn p-3">Web Designing</p>
+            </div>
+            <div class="shadow-lg  flex justify-center flex-col items-center  text-green ">
+                <div class="radial-progress size-[7rem] after:bg-none after:inset-[56px] text-[#E5745D] font-velkorn font-semibold md:text-4xl my-3 rounded-none "
+                    style="--value:60;" role="progressbar">60%</div>
+                <p class="font-medium md:text-2xl font-velkorn p-3">Brand Design</p>
+            </div>
+            <div class="shadow-lg  flex justify-center flex-col items-center  text-green ">
+                <div class="radial-progress size-[7rem] after:bg-none after:inset-[56px] text-[#E5745D] font-velkorn font-semibold md:text-4xl my-3 rounded-none "
+                    style="--value:40;" role="progressbar">40%</div>
+                <p class="font-medium md:text-2xl font-velkorn p-3">Web Development</p>
+            </div>
+        </section>
+        <!-- Radial progress end -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
